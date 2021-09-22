@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #121212;
+}
+header {
+  position: relative;
+  margin-right: 200px;
+  float: right;
+}
+header ul {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 45px;
+  list-style-type: none;
+  background-color: #5E2129;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+.head {
+  font-family: 'Source Serif Pro', serif;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ffd700;
+
+  background: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.head:hover {
+  background-size: 100% 2px;
+}
+#big {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%;
+}
+#lit {
+  position: fixed;
+  max-width: 350px;
+  max-height: 350px;
+}
+#cen {
+  margin:0 25% 0 15%;
+  width:50%;
+}
+.container_slider_css{
+  overflow: hidden;
+  position: relative;
+}
+.photo_slider_css{
+  position:absolute;
+  animation:round 16s infinite;
+  opacity:0;
+  width:100%
+}
+@keyframes round {
+  25%{opacity:1}
+  40%{opacity:0}
+}
+img:nth-child(1){animation-delay:12s}
+img:nth-child(2){animation-delay:8s}
+img:nth-child(3){animation-delay:4s}
+img:nth-child(4){animation-delay:0}
+
+.menu {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: -360px;
+  background: #5E2129;
+  transition: all 0.5s;   
+  width: 250px;
+  height: 85vh;
+  margin-top: 10vh;
+  box-shadow: 10px 0 20px rgba(0,0,0,0.4);
+  color: #FFF;
+  padding: 40px 20px;
+  border-radius: 0 50px 0 0;
+}
+.side-title {
+  font-size: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #BFE2FF;
+}
+.is-active {
+  display: block;
+  left: 0;
+}
+.icon {
+  max-width: 55px;
+  max-height: 55px;
+  position: relative;
+  cursor: pointer;
+  margin: 35px 45px 0px 0px;
+  float: right;
+}
