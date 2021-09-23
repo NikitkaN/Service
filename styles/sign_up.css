@@ -78,7 +78,10 @@ p {
 @media (max-width: 1600px) {
     .choice {
         margin:0 20% 0 20%;
-        width: 60%;
+        width:60%;
+    }
+    .block1, .block2 {
+        width: 380px;
     }
     h1 {
         margin-bottom: -20px;
@@ -88,10 +91,17 @@ p {
 @media (max-width: 1440px) {
     .choice {
         margin:0 15% 0 15%;
-        width:70%;
+        width: 70%;
+    }
+    .block1, .block2 {
+        width: 410px;
+        padding: 15px 0px 0px 30px;
     }
 }
 @media (max-width: 1024px) {
+    .block1, .block2 {
+        padding: 15px;
+    }
     .choice {
         margin:0 5% 0 5%;
         width:90%;
