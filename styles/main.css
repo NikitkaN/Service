@@ -19,6 +19,7 @@ header {
   position: relative;
   margin-right: 200px;
   float: right;
+  margin-top: -80px
 }
 header ul {
   width: 350px;
