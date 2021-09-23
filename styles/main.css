@@ -123,7 +123,7 @@ img:nth-child(4){animation-delay:0}
 .icon:hover {
   opacity: 0.7;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   header {
     margin-right: 100px;
   }

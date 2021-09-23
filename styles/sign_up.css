@@ -75,6 +75,12 @@ p {
     max-width: 256px;
     max-height: 256px;
 }
+@media (max-width: 1600px) {
+    .choice {
+        margin:0 20% 0 20%;
+        width: 60%;
+    }
+}
 @media (max-width: 1440px) {
     .choice {
         margin:0 15% 0 15%;
