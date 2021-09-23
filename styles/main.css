@@ -115,4 +115,10 @@ img:nth-child(4){animation-delay:0}
   cursor: pointer;
   margin: 35px 45px 0px 0px;
   float: right;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+}
+.icon:hover {
+  opacity: 0.7;
 }
